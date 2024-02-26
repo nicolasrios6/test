@@ -8,7 +8,7 @@ const LobbyAdmin = ({onLogout}) => {
 	const [sesionCreada, setSesionCreada] = useState(false)
 	const [codigoSesion, setCodigoSesion] = useState('')
 	const [juegoComenzado, setJuegoComenzado] = useState(false)
-	const socket = io('http://localhost:8000')
+	const socket = io('https://test-zeta-one-18.vercel.app/')
 
 	const handleCrearSesion = () => {
 		const codigo = uuidv4()

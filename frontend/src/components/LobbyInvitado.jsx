@@ -11,7 +11,7 @@ const LobbyInvitado = ({onLogout}) => {
 	const [esperando, setEsperando] = useState(false); // Nuevo estado para controlar si se está esperando que el juego comience
 	const[jugando, setJugando] = useState(false)
 	
-	const socket = io('http://localhost:8000')
+	const socket = io('https://test-zeta-one-18.vercel.app/')
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()

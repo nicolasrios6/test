@@ -16,7 +16,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 		try{
-			const response = await axios.get(`http://localhost:8000/usuarios/${dni}`)
+			const response = await axios.get(`https://test-zeta-one-18.vercel.app/usuarios/${dni}`)
 			const usuario = response.data
 
 			if(usuario.tipo === 'admin') {
