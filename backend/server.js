@@ -19,6 +19,13 @@ const PORT = 8000
 
 
 app.use(cors())
+
+app.use(cors({
+	origin: 'https://test-zeta-one-18.vercel.app/', // Cambia esto con la URL de tu frontend
+	methods: ['GET', 'POST', 'PUT', 'DELETE'],
+	allowedHeaders: ['Content-Type', 'Authorization'],
+  }));
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use('/usuarios', usuariosRoutes)
